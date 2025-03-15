@@ -1,11 +1,12 @@
 body{
-    background-color: rgb(236, 235, 236);
-    color: #3D48EB;
+    background-color: #011126;
+    color: #264773;
     font-size: 24px;
 }
 .container {
-    background-color: rgb(208, 191, 220);
-    max-width: 35vw;
+    background-color: #B5B5D4;
+    width: 35vw;
+    max-width: 25rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
@@ -24,6 +25,10 @@ body{
 .heading p{
     margin: 1.5rem;
 }
+div {
+    display: flex;
+    justify-content: space-between;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -34,50 +39,62 @@ form input {
     padding: 0.5rem;
     border: none;
     border-radius: 0.5rem;
+    background-color: #F1FBFF;
+    margin-bottom: 0.5rem;
 }
 .button {
     max-width: fit-content;
     border: none;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    color: #dedee1;
-    background-color: #e4639d;
+    color: #FCFEFF;
+    background-color: #345E93;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 .button:hover {
-    background-color: #eaa263;
+    background-color: #6FAFE0;
     font-size: .90rem;
-    margin-bottom: 1.9rem;
+    margin-bottom: 1.95rem;
 }
 .button:active {
-    background-color: #eaa263;
     color: #2b2829;
+}
+.clear {
+    max-width: fit-content;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #e9f1fb;
+    background-color: #182133;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.list {
+    flex-direction: column;
 }
 .item {
     display: flex;
     justify-content: space-between;
-    color: #6220ef;
+    color: #254466;
     padding: 0.5rem;
     margin-top: 0.5rem;
     border-radius: 0.5rem;
-    background-color: #E886EB;
+    background-color: #e9f1fb;
     min-width: fit-content;
 }
 .item p {
     font-size: 1rem;
-    padding: 0.35rem;
     margin: 0px;
 }
 .delete {
-    background-color: #E886EB;
+    background-color: #e9f1fb;
     color: red;
     border: none;
 }
 .delete:hover {
-    color: #ff8031;
+    color: #535477;
 }
 .delete:active {
-    color: #4F4AFA;
-    color: #2b2829;
-    font-size: 0.9rem;
+    color: #FCFEFF;
 }

@@ -12,26 +12,13 @@
             <p>Shopping List</p>
         </div>
         <form>
-            <input type = "text" value = "Enter your Item"/>
+            <input id="task" type = "text" placeholder = "Enter your Item"/>
+            <div>
+                <button class="button" id="add-item">+ Add Item</button>
+                <button class="clear" id="clear-all">🗑️ Clear All</button>
+            </div>
         </form>
-        <button class="button">+ Add Item</button>
         <div class="list" id="list-view">
-            <div class = "item" id = "item-1">
-                <p>Apples</p>
-                <button class="delete">x</button>
-            </div>
-            <div class = "item" id = "item-1">
-                <p>Oranges</p>
-                <button class="delete">x</button>
-            </div>
-            <div class = "item" id = "item-1">
-                <p>Notebook</p>
-                <button class="delete">x</button>
-            </div>
-            <div class = "item" id = "item-1">
-                <p>Flour</p>
-                <button class="delete">x</button>
-            </div>
         </div>
     </div>
 </body>
