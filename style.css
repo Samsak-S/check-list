@@ -5,8 +5,8 @@ body{
 }
 .container {
     background-color: #B5B5D4;
-    width: 35vw;
     max-width: 25rem;
+    min-width: 20rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
@@ -69,6 +69,14 @@ form input {
     background-color: #182133;
     margin-top: 1rem;
     margin-bottom: 2rem;
+}
+.clear:hover {
+    background-color: #331818;
+    font-size: .90rem;
+    margin-bottom: 1.95rem;
+}
+.clear:active {
+    color: #2b2829;
 }
 .list {
     flex-direction: column;
