@@ -28,7 +28,6 @@ click.addEventListener("click", (event) => {
 
         const parent_div = document.querySelector("#list-view");
         parent_div.appendChild(new_div);
-        console.log(parent_div);
         task.value = "";
     }
 
@@ -43,4 +42,25 @@ click.addEventListener("click", (event) => {
             event.target.parentElement.remove();
         });
     });
+});
+
+const filter = document.querySelector("#filter");
+
+filter.addEventListener("input", (event) => {
+    event.preventDefault();
+    const text = document.querySelector("#filter").value.trim();
+    const children = document.querySelector("#list-view").childNodes;
+    if(text) {
+        children.forEach(child => {
+            if(child.firstChild.textContent.trim().toLowerCase().includes(text.toLowerCase()))
+                child.style.display = "flex";
+            else
+                child.style.display = "none";
+        });
+    }
+    else {
+        children.forEach(child => {
+            child.style.display = "flex";
+        });
+    }
 });
