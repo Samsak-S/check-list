@@ -42,6 +42,10 @@ form input {
     background-color: #F1FBFF;
     margin-bottom: 0.5rem;
 }
+form input:focus {
+    box-shadow: 0px 0px 0.5rem 0px rgba(249, 255, 255, 0.7);
+    outline: none;
+}
 .button {
     max-width: fit-content;
     border: none;
@@ -54,6 +58,7 @@ form input {
 }
 .button:hover {
     background-color: #6FAFE0;
+    box-shadow: 0px 0px 0.5rem 0px rgba(129, 192, 237, 0.7);
     font-size: .90rem;
     margin-bottom: 1.95rem;
 }
@@ -72,11 +77,12 @@ form input {
 }
 .clear:hover {
     background-color: #331818;
+    box-shadow: 0px 0px 0.5rem 0px #492531;
     font-size: .90rem;
     margin-bottom: 1.95rem;
 }
 .clear:active {
-    color: #2b2829;
+    background-color: #3d232c;
 }
 .list {
     flex-direction: column;
@@ -115,5 +121,9 @@ form input {
     background-color: #B5B5D4;
 }
 .filter:focus {
+    background-color: rgba(227, 220, 235, 0.5);
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    padding-left: 0.5rem;
     outline: none;
 }
